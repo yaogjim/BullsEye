@@ -15,13 +15,14 @@
 @implementation BullsEyeViewController
 {
     int _currentValue;
+    int _targetValue;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    _currentValue = 50;
+    [self startNewRound];
+    [self updateLabels];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,7 +33,7 @@
 
 - (IBAction)showAlert
 {
-    NSString * message = [NSString stringWithFormat:@"The value of the slider is: %d", _currentValue];
+    NSString * message = [NSString stringWithFormat:@"The value of the slider is: %d\nThe target value is: %d", _currentValue, _targetValue];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World"
                                                         message:message
@@ -40,10 +41,25 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
     [alertView show];
+    [self startNewRound];
+    [self updateLabels];
 }
 
 -(IBAction)sliderMoved:(UISlider *)slider
 {
     _currentValue = lroundf(slider.value);
 }
+
+- (void)startNewRound
+{
+    _targetValue = 1 + arc4random_uniform(100);
+    _currentValue = 50;
+    self.slider.value = _currentValue;
+}
+
+-(void) updateLabels
+{
+    self.targetLabel.text = [NSString stringWithFormat:@"%d",_targetValue];
+}
+
 @end

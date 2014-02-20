@@ -99,6 +99,10 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="slider" destination="dzc-Hi-C1k" id="ZyB-Jj-zXo"/>
+                        <outlet property="targetLabel" destination="v9G-Vk-0bd" id="YV9-MO-wlH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
