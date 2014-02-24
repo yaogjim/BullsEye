@@ -21,6 +21,7 @@
 		65152A9918B5197B00F70F97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65152A7B18B5197B00F70F97 /* UIKit.framework */; };
 		65152AA118B5197B00F70F97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65152A9F18B5197B00F70F97 /* InfoPlist.strings */; };
 		65152AA318B5197B00F70F97 /* BullsEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65152AA218B5197B00F70F97 /* BullsEyeTests.m */; };
+		65732B9D18BACCA60025AD80 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65732B9C18BACCA60025AD80 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		65152A9E18B5197B00F70F97 /* BullsEyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullsEyeTests-Info.plist"; sourceTree = "<group>"; };
 		65152AA018B5197B00F70F97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65152AA218B5197B00F70F97 /* BullsEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsEyeTests.m; sourceTree = "<group>"; };
+		65732B9B18BACCA60025AD80 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		65732B9C18BACCA60025AD80 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				65152A8618B5197B00F70F97 /* BullsEyeAppDelegate.h */,
 				65152A8718B5197B00F70F97 /* BullsEyeAppDelegate.m */,
 				65152A8918B5197B00F70F97 /* Main.storyboard */,
+				65732B9B18BACCA60025AD80 /* AboutViewController.h */,
+				65732B9C18BACCA60025AD80 /* AboutViewController.m */,
 				65152A8C18B5197B00F70F97 /* BullsEyeViewController.h */,
 				65152A8D18B5197B00F70F97 /* BullsEyeViewController.m */,
 				65152A8F18B5197B00F70F97 /* Images.xcassets */,
@@ -252,6 +257,7 @@
 			files = (
 				65152A8418B5197B00F70F97 /* main.m in Sources */,
 				65152A8E18B5197B00F70F97 /* BullsEyeViewController.m in Sources */,
+				65732B9D18BACCA60025AD80 /* AboutViewController.m in Sources */,
 				65152A8818B5197B00F70F97 /* BullsEyeAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
